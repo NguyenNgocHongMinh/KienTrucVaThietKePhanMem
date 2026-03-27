@@ -1,0 +1,9 @@
+{
+  "name": "multi-stage-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "build": "echo build done",
+    "start": "node app.js"
+  }
+}
