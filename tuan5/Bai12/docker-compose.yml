@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: prom_bai12
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana_bai12
+    ports:
+      - "3001:3000"
+
+  node-exporter:
+    image: prom/node-exporter
+    container_name: nodeexp_bai12
+    ports:
+      - "9100:9100"
