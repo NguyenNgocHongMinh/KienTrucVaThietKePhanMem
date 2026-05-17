@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  address: 0.0.0.0
+
+spring:
+  application:
+    name: product-pu
+  data:
+    redis:
+      host: ${REDIS_HOST:172.16.65.167}
+      port: 6379
+logging:
+  level:
+    org.springframework.data.redis: DEBUG
+    com.example.flashsale: DEBUG
